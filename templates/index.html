@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <head>
+    </head>
+    <div class="container">
+        <h1>Heart Disease Prediction</h1>
+        <form id="predictionForm">
+            <label for="sysBP">Systolic Blood Pressure:</label>
+            <input type="number" id="sysBP" name="sysBP" required>
+
+            <label for="glucose">Glucose:</label>
+            <input type="number" id="glucose" name="glucose" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="totChol">Total Cholesterol:</label>
+            <input type="number" id="totChol" name="totChol" required>
+
+            <label for="cigsPerDay">Cigarettes Per Day:</label>
+            <input type="number" id="cigsPerDay" name="cigsPerDay" required>
+
+            <label for="diaBP">Diastolic Blood Pressure:</label>
+            <input type="number" id="diaBP" name="diaBP" required>
+
+            <label for="prevalentHyp">Prevalent Hypertension:</label>
+            <input type="number" id="prevalentHyp" name="prevalentHyp" required>
+
+            <label for="diabetes">Diabetes:</label>
+            <input type="number" id="diabetes" name="diabetes" required>
+
+            <label for="BPMeds">Blood Pressure Medications:</label>
+            <input type="number" id="BPMeds" name="BPMeds" required>
+
+            <label for="male">Male:</label>
+            <input type="number" id="male" name="male" required>
+
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
